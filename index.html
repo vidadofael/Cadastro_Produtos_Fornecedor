@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/stylePrincipal.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./fonts/iFoodRCTitulos-Bold.ttf">
+    
+    <title>Minha Loja 01</title>
+
+</head>
+<body>
+
+    <header>
+        <h1>Cadastro de Produtos - Fornecedor</h1>
+    </header>
+
+    <main>
+        <div class="title">
+            <h2>Produtos</h2>
+            <span>Lista de produtos da minha loja.</span>
+        </div>
+
+        <div class="search__button">
+            <label for="search-input">Pesquisar: </label>
+            <input type="text" id="search-input" placeholder="por produto...">
+            <button id="search-btn"><img src="./icons/search.png" alt="ícone de pesquisa de produtos"></button>
+        </div>
+
+        <div class="card">
+            
+            <div class="linha__input">
+                <label for="ean">EAN</label>
+                <input class="input__ean" type="number" id="ean" placeholder="EAN do produto" data-form-inputean>
+            </div>
+
+            <div class="linha__input">
+                <label for="ean">Marca</label>
+                <input type="text" id="marca" placeholder="Marca do produto" data-form-inputmarca>
+            </div>
+
+            <div class="linha__input">
+                <label for="produto">Produto</label>
+                <input type="text" id="produto" placeholder="Nome do produto" data-form-inputproduto>
+            </div>
+
+            <div class="linha__input">
+                <label for="ean">Modelo</label>
+                <input type="text" id="modelo" placeholder="Modelo do produto" data-form-inputmodelo>
+            </div>
+
+            <div class="linha__input">
+                <label for="ean">Cor</label>
+                <input type="text" id="cor" placeholder="Cor do produto" data-form-inputcor>
+            </div>
+
+            <div class="linha__input">
+                <label for="valor">Preço</label>
+                <input type="text" id="preco" placeholder="Valor do produto" data-form-inputpreco>
+            </div>
+
+            <div class="linha__input">
+                <label for="ean">Estoque</label>
+                <input type="number" id="estoque" placeholder="Estoque do produto" data-form-inputestoque>
+            </div>
+
+            
+
+        </div>
+
+        <div>
+            <button class="button__save" data-form-button>Salvar</button>
+            <button class="button__cancel" data-form-button-cancel>Cancelar</button>
+        </div>
+
+        <div class="content">
+            <table class="list" data-list>
+                <thead>
+                    <th class="center">EAN</th>
+                    <th>Marca</th>
+                    <th>Nome</th>
+                    <th>Modelo</th>
+                    <th>Cor</th>
+                    <th>Preço</th>
+                    <th>Estoque</th>
+                    <th class="center">Ações</th>
+                </thead>
+
+
+                
+
+            </table>
+        </div>
+    </main>
+    
+    <script src="./cadastroItens.js"></script>
+</body>
+</html>
